@@ -81,6 +81,18 @@
             <th>Email</th>
             <th>Actions</th>
             </tr>`
+        for (let i = 0; i < data.length; i++){
+            let value = i;
+            table += `<tr>
+            <td>${value += 1}</td>
+            <td>${data[i].hovaten}</td>
+            <td>${data[i].mathisinh}</td>
+            <td>${data[i].id}</td>
+            <td>${data[i].tendoi}</td>
+            <td>${data[i].email}</td>
+            </tr>`
+        }
+        document.getElementById("show").innerHTML = table
     }
 </script>
 </html>
