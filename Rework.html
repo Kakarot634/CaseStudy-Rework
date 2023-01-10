@@ -90,6 +90,8 @@
             <td>${data[i].id}</td>
             <td>${data[i].tendoi}</td>
             <td>${data[i].email}</td>
+            <th>
+                <button onclick="deleteitem(${data[i].id})">Xóa</button>
             </tr>`
         }
         document.getElementById("show").innerHTML = table
